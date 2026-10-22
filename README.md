@@ -296,8 +296,9 @@ integration, level design, audio and native visual review**. Read the
 into another project.
 
 The maintained instructions live in `.agents/skills`. Complete copies in
-`.claude/skills` include the same instructions and resources. Both agents get the
-full skills. Run `npm run skills:sync` after editing the maintained source.
+`.claude/skills` include the same instructions and resources. Codex and Claude
+each read their own folder. Cursor Agent reads both, so no `.cursor/skills`
+copy is kept. Run `npm run skills:sync` after editing the maintained source.
 Copy a skill together with its referenced resources; keep `.env`, job receipts
 and account configuration private.
 
